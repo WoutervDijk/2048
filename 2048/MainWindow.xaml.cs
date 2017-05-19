@@ -20,9 +20,12 @@ namespace _2048
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int[,] numbers;
         public MainWindow()
         {
+            numbers = new int[3, 3];
             InitializeComponent();
+            Place_0_0.Source = new BitmapImage(new Uri(@"2048/tail.png", UriKind.RelativeOrAbsolute));
         }
     }
 }

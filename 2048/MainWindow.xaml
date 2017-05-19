@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2048"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="350">
     <Grid>
-        
+        <Image Margin="25,35,25,15" Source="tail.png" Stretch="Fill"/>
+        <Image x:Name="Place_0_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="36,45,0,0"/>
+        <Image x:Name="Place_1_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="36,110,0,0"/>
+        <Image x:Name="Place_0_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,45,0,0"/>
+        <Image x:Name="Place_0_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="176,45,0,0"/>
+        <Image x:Name="Place_0_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="246,45,0,0"/>
+        <Image x:Name="Place_1_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,109,0,0"/>
+        <Image x:Name="Place_1_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="175,109,0,0"/>
+        <Image x:Name="Place_1_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="246,109,0,0"/>
+        <Image x:Name="Place_2_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="175,176,0,0"/>
+        <Image x:Name="Place_2_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="247,176,0,0"/>
+        <Image x:Name="Place_2_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,176,0,0"/>
+        <Image x:Name="Place_3_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="175,240,0,0"/>
+        <Image x:Name="Place_3_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="246,240,0,0"/>
+        <Image x:Name="Place_2_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="35,176,0,0"/>
+        <Image x:Name="Place_3_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,239,0,0"/>
+        <Image x:Name="Place_3_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="35,240,0,0"/>
+
     </Grid>
 </Window>
