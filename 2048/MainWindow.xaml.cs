@@ -25,7 +25,18 @@ namespace _2048
         {
             numbers = new int[3, 3];
             InitializeComponent();
-            Place_0_0.Source = new BitmapImage(new Uri(@"2048/tail.png", UriKind.RelativeOrAbsolute));
+            //Place_0_0.Source = new BitmapImage(new Uri(@"2048/tail.png", UriKind.RelativeOrAbsolute));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Place_0_0.Source = AllBitmapImages.firstPic;
+            
+        }
+        private Tuple<int, int> GetRandomPlace()
+        {
+            Random rand = new Random();
+            rand.Next(0, 3);
         }
     }
 }
