@@ -9,21 +9,21 @@
     <Grid>
         <Image Margin="25,35,30,15" Source="tail.png" Stretch="Fill"/>
         <Image x:Name="Place_0_0" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="34,43,0,0"/>
-        <Image x:Name="Place_1_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="36,110,0,0"/>
-        <Image x:Name="Place_0_1" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="60" Margin="104,43,0,0"/>
-        <Image x:Name="Place_0_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="176,45,0,0"/>
-        <Image x:Name="Place_0_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="246,45,0,0"/>
-        <Image x:Name="Place_1_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,109,0,0"/>
-        <Image x:Name="Place_1_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="175,109,0,0"/>
-        <Image x:Name="Place_1_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="246,109,0,0"/>
-        <Image x:Name="Place_2_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="175,176,0,0"/>
-        <Image x:Name="Place_2_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="247,176,0,0"/>
-        <Image x:Name="Place_2_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,176,0,0"/>
-        <Image x:Name="Place_3_2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="175,240,0,0"/>
-        <Image x:Name="Place_3_3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="246,240,0,0"/>
-        <Image x:Name="Place_2_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="35,176,0,0"/>
-        <Image x:Name="Place_3_1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="105,239,0,0"/>
-        <Image x:Name="Place_3_0" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="60" Margin="35,240,0,0"/>
+        <Image x:Name="Place_1_0" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="34,107,0,0"/>
+        <Image x:Name="Place_0_1" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="101,42,0,0"/>
+        <Image x:Name="Place_0_2" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="168,43,0,0"/>
+        <Image x:Name="Place_0_3" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="236,43,0,0"/>
+        <Image x:Name="Place_1_1" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="100,107,0,0"/>
+        <Image x:Name="Place_1_2" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="168,107,0,0"/>
+        <Image x:Name="Place_1_3" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="236,107,0,0"/>
+        <Image x:Name="Place_2_2" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="168,170,0,0"/>
+        <Image x:Name="Place_2_3" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="236,171,0,0"/>
+        <Image x:Name="Place_2_1" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="100,171,0,0"/>
+        <Image x:Name="Place_3_2" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="168,233,0,0"/>
+        <Image x:Name="Place_3_3" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="236,234,0,0"/>
+        <Image x:Name="Place_2_0" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="34,171,0,0"/>
+        <Image x:Name="Place_3_1" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="101,234,0,0"/>
+        <Image x:Name="Place_3_0" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="61" Margin="34,235,0,0"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
     </Grid>
