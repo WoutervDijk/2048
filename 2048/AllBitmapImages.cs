@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +13,26 @@ namespace _2048
     {
         //https://msdn.microsoft.com/en-us/library/aa970269(v=vs.110).aspx
         //Add all the bitmapimages with resource and check if it works
-        public static BitmapImage firstPic = new BitmapImage(new Uri("C:/C# Projects/2048/2048/2048/Number2.png", UriKind.RelativeOrAbsolute));
+        public static BitmapImage firstPic = new BitmapImage(new Uri(@"2048\2048\Number2.png", UriKind.Relative));
+        public static void IntializeImages()
+        {
+            firstPic = BitmapToImageSource(Properties.Resources.Number2);
+        }
+        public static BitmapImage BitmapToImageSource(Bitmap bitmap)
+        {
+            using (MemoryStream memory = new MemoryStream())
+            {
+                bitmap.Save(memory, System.Drawing.Imaging.ImageFormat.Bmp);
+                memory.Position = 0;
+                BitmapImage bitmapimage = new BitmapImage();
+                bitmapimage.BeginInit();
+                bitmapimage.StreamSource = memory;
+                bitmapimage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapimage.EndInit();
+
+                return bitmapimage;
+            }
+        }
+        //public static BitmapImage firstPic = new BitmapImage(new Uri("C:/C# Projects/2048/2048/2048/Number2.png", UriKind.RelativeOrAbsolute));
     }
 }

@@ -26,10 +26,11 @@ namespace _2048
         public MainWindow()
         {
             InitializeComponent();
+            AllBitmapImages.IntializeImages();
             numbers = new Image[4, 4] { { Place_0_0, Place_0_1, Place_0_2, Place_0_3 },{ Place_1_0, Place_1_1, Place_1_2, Place_1_3 },{ Place_2_0, Place_2_1, Place_2_2, Place_2_3 },{ Place_3_0, Place_3_1, Place_3_2, Place_3_3 } };
             //IntializeArray();
 
-            Place_0_0.Source = new BitmapImage(new Uri(@"2048/tail.png", UriKind.RelativeOrAbsolute));
+            //Place_0_0.Source = new BitmapImage(new Uri(@"2048/tail.png", UriKind.RelativeOrAbsolute));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
