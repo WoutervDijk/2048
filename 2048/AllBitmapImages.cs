@@ -13,10 +13,15 @@ namespace _2048
     {
         //https://msdn.microsoft.com/en-us/library/aa970269(v=vs.110).aspx
         //Add all the bitmapimages with resource and check if it works
-        public static BitmapImage firstPic = new BitmapImage(new Uri(@"2048\2048\Number2.png", UriKind.Relative));
+        public static BitmapImage firstPic = new BitmapImage();
+        public static BitmapImage secondPic = new BitmapImage();
+        public static BitmapImage[] allPics = new BitmapImage[2];
         public static void IntializeImages()
         {
             firstPic = BitmapToImageSource(Properties.Resources.Number2);
+            secondPic = BitmapToImageSource(Properties.Resources.Number21);
+            allPics[0] = firstPic;
+            allPics[1] = secondPic;
         }
         public static BitmapImage BitmapToImageSource(Bitmap bitmap)
         {
