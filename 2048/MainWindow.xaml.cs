@@ -33,8 +33,10 @@ namespace _2048
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+            
             if (e.Key == Key.Left && !isPressed)
             {
+                isPressed = true;
                 for (int i = 0; i < 4; i++)
 
                 {

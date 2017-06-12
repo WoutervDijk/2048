@@ -73,9 +73,9 @@ namespace _2048.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Number21 {
+        internal static System.Drawing.Bitmap Number4 {
             get {
-                object obj = ResourceManager.GetObject("Number21", resourceCulture);
+                object obj = ResourceManager.GetObject("Number4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -19,7 +19,7 @@ namespace _2048
         public static void IntializeImages()
         {
             firstPic = BitmapToImageSource(Properties.Resources.Number2);
-            secondPic = BitmapToImageSource(Properties.Resources.Number21);
+            secondPic = BitmapToImageSource(Properties.Resources.Number4);
             allPics[0] = firstPic;
             allPics[1] = secondPic;
         }
