@@ -33,7 +33,6 @@ namespace _2048
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            
             if (e.Key == Key.Left && !isPressed)
             {
                 isPressed = true;
@@ -81,7 +80,7 @@ namespace _2048
 
                                 {
 
-                                    numbers[i, j] = numbers[i, k];
+                                    numbers[i, j].Source = numbers[i, k].Source;
 
                                     numbers[i, k].Source = null;
 
@@ -115,7 +114,8 @@ namespace _2048
         }
         private void Window_KeyUp(object sender, KeyEventArgs e)
         {
-
+            if (e.Key == Key.Left)
+                isPressed = false;
         }
         //Zoek een random plek en returned een Tuple
         private Tuple<int, int> GetRandomPlace()
