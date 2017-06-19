@@ -15,13 +15,24 @@ namespace _2048
         //Add all the bitmapimages with resource and check if it works
         public static BitmapImage firstPic = new BitmapImage();
         public static BitmapImage secondPic = new BitmapImage();
-        public static BitmapImage[] allPics = new BitmapImage[2];
+        public static BitmapImage[] allPics = new BitmapImage[13];
         public static void IntializeImages()
         {
             firstPic = BitmapToImageSource(Properties.Resources.Number2);
             secondPic = BitmapToImageSource(Properties.Resources.Number4);
             allPics[0] = firstPic;
             allPics[1] = secondPic;
+            allPics[2] = BitmapToImageSource(Properties.Resources.Number8);
+            allPics[3] = BitmapToImageSource(Properties.Resources.Number16);
+            allPics[4] = BitmapToImageSource(Properties.Resources.Number32);
+            allPics[5] = BitmapToImageSource(Properties.Resources.Number64);
+            allPics[6] = BitmapToImageSource(Properties.Resources.Number128);
+            allPics[7] = BitmapToImageSource(Properties.Resources.Number256);
+            allPics[8] = BitmapToImageSource(Properties.Resources.Number512);
+            allPics[9] = BitmapToImageSource(Properties.Resources.Number1024);
+            allPics[10] = BitmapToImageSource(Properties.Resources.Number2048);
+            allPics[11] = BitmapToImageSource(Properties.Resources.Number4096);
+            allPics[12] = BitmapToImageSource(Properties.Resources.Number8192);
         }
         public static BitmapImage BitmapToImageSource(Bitmap bitmap)
         {

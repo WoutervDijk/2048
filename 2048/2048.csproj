@@ -110,5 +110,41 @@
   <ItemGroup>
     <None Include="Resources\number4.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number4096.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number8192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number2048.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

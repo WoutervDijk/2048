@@ -37,78 +37,41 @@ namespace _2048
             {
                 isPressed = true;
                 for (int i = 0; i < 4; i++)
-
                 {
-
                     for (int j = 0; j < 4; j++)
-
                     {
-
                         for (int k = j + 1; k < 4; k++)
-
                         {
-
                             if (numbers[i, k].Source == null)
-
                             {
-
                                 continue;
-
                             }
-
                             else if (numbers[i, k].Source == numbers[i, j].Source)
-
                             {
-
-                                numbers[i, j].Source = AllBitmapImages.secondPic;
-
+                                numbers[i, j].Source = OneNumberHigher(numbers[i,j].Source);
                                 //iScore += iBoard[i][j];
-
                                 numbers[i, k].Source = null;
-
                                 //bAdd = true;
-
                                 break;
-
                             }
-
                             else
-
                             {
-
                                 if (numbers[i, j].Source == null && numbers[i, k].Source != null)
-
                                 {
-
                                     numbers[i, j].Source = numbers[i, k].Source;
-
                                     numbers[i, k].Source = null;
-
                                     j--;
-
                                     //bAdd = true;
-
                                     break;
-
                                 }
-
                                 else if (numbers[i, j].Source != null)
-
                                 {
-
                                     break;
-
                                 }
-
                             }
-
                         }
-
                     }
-
                 }
-
-
             }
 
         }
@@ -160,7 +123,36 @@ namespace _2048
                     reDoLoop = true;
             } while (reDoLoop);
         }
-
+        private BitmapImage OneNumberHigher(ImageSource current)
+        {
+            if (current == AllBitmapImages.allPics[0])
+                return AllBitmapImages.allPics[1];
+            if (current == AllBitmapImages.allPics[1])
+                return AllBitmapImages.allPics[2];
+            if (current == AllBitmapImages.allPics[2])
+                return AllBitmapImages.allPics[3];
+            if (current == AllBitmapImages.allPics[3])
+                return AllBitmapImages.allPics[4];
+            if (current == AllBitmapImages.allPics[4])
+                return AllBitmapImages.allPics[5];
+            if (current == AllBitmapImages.allPics[5])
+                return AllBitmapImages.allPics[6];
+            if (current == AllBitmapImages.allPics[6])
+                return AllBitmapImages.allPics[7];
+            if (current == AllBitmapImages.allPics[7])
+                return AllBitmapImages.allPics[8];
+            if (current == AllBitmapImages.allPics[8])
+                return AllBitmapImages.allPics[9];
+            if (current == AllBitmapImages.allPics[9])
+                return AllBitmapImages.allPics[10];
+            if (current == AllBitmapImages.allPics[10])
+                return AllBitmapImages.allPics[11];
+            if (current == AllBitmapImages.allPics[11])
+                return AllBitmapImages.allPics[12];
+            else
+                return AllBitmapImages.allPics[0];
+            
+        }
 
     }
 }
