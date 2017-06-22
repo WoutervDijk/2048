@@ -33,8 +33,146 @@ namespace _2048
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+            if(e.Key == Key.Up && !isPressed)
+            {
+                Image[,] currentGameState = numbers;
+                isPressed = true;
+                for (int j = 0; j < 4; j++)
+                {
+                    for (int i = 0; i < 4; i++)
+                    {
+                        for (int k = i + 1; k < 4; k++)
+                        {
+                            if (numbers[k,j].Source == null)
+                            {
+                                continue;
+                            }
+                            else if (numbers[k,j].Source == numbers[i,j].Source)
+                            {
+                                numbers[i,j].Source = OneNumberHigher(numbers[i,j].Source);
+                                //iScore += numbers[i][j];
+                                numbers[k,j].Source = null;
+                                //bAdd = true;
+                                break;
+                            }
+                            else
+                            {
+                                if (numbers[i,j].Source == null && numbers[k,j].Source != null)
+                                {
+                                    numbers[i,j].Source = numbers[k,j].Source;
+                                    numbers[k,j].Source = null;
+                                    i--;
+                                    //bAdd = true;
+                                    break;
+                                }
+                                else if (numbers[i,j].Source != null)
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                if(CheckIfGameChanges(numbers,currentGameState))
+                {
+                    AddRandom2Place();
+                }
+                
+            }
+            if(e.Key == Key.Right && !isPressed)
+            {
+                Image[,] currentGameState = numbers;
+                isPressed = true;
+                for (int i = 0; i < 4; i++)
+                {
+                    for (int j = 3; j >= 0; j--)
+                    {
+                        for (int k = j - 1; k >= 0; k--)
+                        {
+                            if (numbers[i,k].Source == null)
+                            {
+                                continue;
+                            }
+                            else if (numbers[i,k].Source == numbers[i,j].Source)
+                            {
+                                numbers[i,j].Source = OneNumberHigher(numbers[i,j].Source);
+                                //iScore += numbers[i][j];
+                                numbers[i,k].Source = null;
+                                //bAdd = true;
+                                break;
+                            }
+                            else
+                            {
+                                if (numbers[i,j].Source == null && numbers[i,k].Source != null)
+                                {
+                                    numbers[i,j].Source = numbers[i,k].Source;
+                                    numbers[i,k].Source = null;
+                                    j++;
+                                    //bAdd = true;
+                                    break;
+                                }
+                                else if (numbers[i,j].Source != null)
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                if (CheckIfGameChanges(numbers, currentGameState))
+                {
+                    AddRandom2Place();
+                }
+            }
+            if (e.Key == Key.Down && !isPressed)
+            {
+                Image[,] currentGameState = numbers;
+                isPressed = true;
+                for (int j = 0; j < 4; j++)
+                {
+                    for (int i = 3; i >= 0; i--)
+                    {
+                        for (int k = i - 1; k >= 0; k--)
+                        {
+                            if (numbers[k, j].Source == null)
+                            {
+                                continue;
+                            }
+                            else if (numbers[k, j].Source == numbers[i, j].Source)
+                            {
+                                numbers[i, j].Source = OneNumberHigher(numbers[i, j].Source);
+                                //iScore += numbers[i,j];
+                                numbers[k, j].Source = null;
+                                //bAdd = true;
+                                break;
+                            }
+                            else
+                            {
+                                if (numbers[i, j].Source == null && numbers[k, j].Source != null)
+                                {
+                                    numbers[i, j].Source = numbers[k, j].Source;
+                                    numbers[k, j].Source = null;
+                                    i++;
+                                    //bAdd = true;
+                                    break;
+                                }
+                                else if (numbers[i, j].Source != null)
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                if (CheckIfGameChanges(numbers, currentGameState))
+                {
+                    AddRandom2Place();
+                }
+            }
             if (e.Key == Key.Left && !isPressed)
             {
+                ImageSource[,] currentGameState = new ImageSource[4,4];
+                Array.Copy(numbers, currentGameState, 16);
                 isPressed = true;
                 for (int i = 0; i < 4; i++)
                 {
@@ -49,7 +187,7 @@ namespace _2048
                             else if (numbers[i, k].Source == numbers[i, j].Source)
                             {
                                 numbers[i, j].Source = OneNumberHigher(numbers[i,j].Source);
-                                //iScore += iBoard[i][j];
+                                //iScore += numbers[i][j];
                                 numbers[i, k].Source = null;
                                 //bAdd = true;
                                 break;
@@ -72,12 +210,22 @@ namespace _2048
                         }
                     }
                 }
+                if (CheckIfGameChanges(numbers, currentGameState))
+                {
+                    AddRandom2Place();
+                }
             }
-
         }
+
         private void Window_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Left)
+                isPressed = false;
+            if (e.Key == Key.Right)
+                isPressed = false;
+            if (e.Key == Key.Up)
+                isPressed = false;
+            if (e.Key == Key.Down)
                 isPressed = false;
         }
         //Zoek een random plek en returned een Tuple
@@ -152,6 +300,14 @@ namespace _2048
             else
                 return AllBitmapImages.allPics[0];
             
+        }
+        private bool CheckIfGameChanges(Image[,] current, Image[,] old)
+        {
+            if(numbers[0,0].Source == old[0,0].Source && numbers[0, 1].Source == old[0, 1].Source && numbers[0, 2].Source == old[0, 2].Source && numbers[0, 3].Source == old[0, 3].Source && numbers[1, 0].Source == old[1, 0].Source && numbers[1, 1].Source == old[1, 1].Source && numbers[1, 2].Source == old[1, 2].Source && numbers[1, 3].Source == old[1, 3].Source && numbers[2, 0].Source == old[2, 0].Source && numbers[2, 1].Source == old[2, 1].Source && numbers[2, 2].Source == old[2, 2].Source && numbers[2, 3].Source == old[2, 3].Source && numbers[3, 0].Source == old[3, 0].Source && numbers[3, 1].Source == old[3, 1].Source && numbers[3, 2].Source == old[3, 2].Source && numbers[3, 3].Source == old[3, 3].Source)
+            {
+                return false;
+            }
+            return true;
         }
 
     }
