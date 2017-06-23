@@ -5,26 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2048"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="350" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+        Title="MainWindow" Height="350" Width="350" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" ResizeMode="NoResize">
     <Grid>
         <Image Margin="25,35,30,10" Source="tail.png" Stretch="Fill"/>
         <Image x:Name="Place_0_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="35,43,0,0"/>
-        <Image x:Name="Place_1_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="32,107,0,0"/>
-        <Image x:Name="Place_0_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="101,43,0,0"/>
-        <Image x:Name="Place_0_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="169,43,0,0"/>
-        <Image x:Name="Place_0_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="236,43,0,0"/>
-        <Image x:Name="Place_1_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="100,107,0,0"/>
-        <Image x:Name="Place_1_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="168,107,0,0"/>
-        <Image x:Name="Place_1_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="236,107,0,0"/>
-        <Image x:Name="Place_2_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="168,170,0,0"/>
-        <Image x:Name="Place_2_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="236,170,0,0"/>
-        <Image x:Name="Place_2_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="100,170,0,0"/>
-        <Image x:Name="Place_3_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="168,235,0,0"/>
-        <Image x:Name="Place_3_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="236,235,0,0"/>
-        <Image x:Name="Place_2_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="35,170,0,0"/>
-        <Image x:Name="Place_3_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="101,235,0,0"/>
-        <Image x:Name="Place_3_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="34,235,0,0"/>
+        <Image x:Name="Place_1_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="35,107,0,0"/>
+        <Image x:Name="Place_0_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="102,43,0,0"/>
+        <Image x:Name="Place_0_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="171,43,0,0"/>
+        <Image x:Name="Place_0_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="238,43,0,0"/>
+        <Image x:Name="Place_1_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="101,107,0,0"/>
+        <Image x:Name="Place_1_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="170,107,0,0"/>
+        <Image x:Name="Place_1_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="238,107,0,0"/>
+        <Image x:Name="Place_2_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="170,172,0,0"/>
+        <Image x:Name="Place_2_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="238,172,0,0"/>
+        <Image x:Name="Place_2_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="102,171,0,0"/>
+        <Image x:Name="Place_3_2" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="170,237,0,0"/>
+        <Image x:Name="Place_3_3" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="238,237,0,0"/>
+        <Image x:Name="Place_2_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="34,171,0,0"/>
+        <Image x:Name="Place_3_1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="102,236,0,0"/>
+        <Image x:Name="Place_3_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="34,236,0,0"/>
         <Button Content="Restart" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"><Run Text="Score"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="ScoreTextBox" HorizontalAlignment="Left" Margin="66,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
