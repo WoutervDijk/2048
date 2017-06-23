@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2048"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="350" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" ResizeMode="NoResize">
+        Title="2048!" Height="350" Width="350" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" ResizeMode="NoResize">
     <Grid>
         <Image Margin="25,35,30,10" Source="tail.png" Stretch="Fill"/>
         <Image x:Name="Place_0_0" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="58" Margin="35,43,0,0"/>
